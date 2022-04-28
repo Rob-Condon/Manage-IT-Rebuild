@@ -1,11 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <MainBar/>
   <router-view/>
 </template>
+<script>
+import { mergeGlobalConfig } from 'vuestic-ui'
+import MainBar from '@/components/navagation/MainBar.vue'
+export default {
+  components: {MainBar},
+  setup () {
+    mergeGlobalConfig({
+      colors: {
+        primary: '#293F14',
+        secondary: '#386C0B',
+        link: '#E1CBF6'
+      }
+    })
+  }
+}
 
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -15,16 +28,43 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+a:hover {
+  color: var(--va-link);
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a {
+  color: var(--va-background);
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.va-navbar__item {
+  align-self: center;
+}
+
+.primary {
+  color: var(--va-primary);
+}
+
+.secondary {
+  color: var(--va-secondary);
+}
+
+.link {
+  color: var(--va-link);
+}
+
+.text-size-tiny {
+  font-size: .625rem;
+}
+
+.text-size-small {
+  font-size: 0.85rem;
+}
+
+.text-size-normal {
+  font-size: 1.2rem;
+}
+
+.mw-900 {
+  max-width: 900px
 }
 </style>
