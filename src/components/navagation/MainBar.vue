@@ -1,8 +1,8 @@
 <template>
-  <va-navbar color="primary" shape class="mb-2">
+  <va-navbar color="primary" shape>
     <template #left>
       <va-navbar-item style="width: 200px">
-        <router-link to="/"><img class="absolute left-0" style="top: 10%; transform: scale(0.7)" src="@/assets/Logos/manageit-digital-logo-clear-no-koru.png"></router-link>
+        <router-link to="/"><img class="absolute left-0" style="top: 10%; transform: scale(0.7)" src="@/assets/Logos/manageit-digital-logo-clear-no-koru.png" alt="manageit logo"></router-link>
       </va-navbar-item>
 
 

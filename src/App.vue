@@ -1,4 +1,4 @@
-<template>
+<template class="MainAPP">
   <MainBar/>
   <router-view/>
 </template>
@@ -20,6 +20,9 @@ export default {
 
 </script>
 <style>
+.MainAPP {
+  overflow-x: hidden;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

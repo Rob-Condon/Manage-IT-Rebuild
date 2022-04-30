@@ -1,6 +1,6 @@
 <template>
-  <div class="flex-auto flex ph7 ph0-m">
-    <div style="width: 100%; height: 70vh; text-align: left; display: flex; flex-direction: column; justify-content: center">
+  <div class="flex-auto flex mh0-m" style=" height: 70vh">
+    <div class="pl7" style="width: 100%; text-align: left; display: flex; flex-direction: column; justify-content: center">
       <h1 class="display-1 title pa2">The DevOps Platform has arrived.</h1>
       <h3 class="display-3 subTitle pa2">Deliver software faster with better security and collaboration in a single platform..</h3>
       <div>
@@ -8,7 +8,9 @@
         <va-button class="va-button--default ma-3" color="warning"> Services</va-button>
       </div>
     </div>
-    <div style="width: 100%; height: 500px;"></div>
+    <div style="width: 100%; position: relative;">
+      <img style="position: absolute; height: 100%; right: 0 " :src='require("@/assets/Logos/SpreadScreenLogo.png")' alt="Spread screen logo">
+    </div>
   </div>
 </template>
 
